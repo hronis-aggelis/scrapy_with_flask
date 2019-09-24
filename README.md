@@ -1,22 +1,19 @@
 # scrapy_with_flask
 
-# This app scrapes product details from  https://www.elcorteingles.es/ based on a url and tries to find the corresponding spanish google taxonomy category. It ouputs the result in the browser as json.
+# Usage
+This app scrapes product details from  https://www.elcorteingles.es/ based on a url and tries to find the corresponding spanish google taxonomy category. It ouputs the result in the browser as json.
 
-# create a virtual enviroment
+# Create and activate a virtual enviroment
 virtualenv [name]
-
-# activate the virtual enviroment
 source [name]/bin/activate
 
-# install packages
+# Install packages
 pip install -r requirements.txt
 
-# open 2 more terminals and activate the virtual enviroment on both of them.
+# Steps to run the app
+1) open 2 more terminals and activate the virtual enviroment on both of them.
+2) from the first scraping directory run "scrapyrt"
+3) from the the webapp directory run "FLASK_APP=example.py flask run"
 
-# go inside the first scraping directory and run the scrapyrt command.
-scrapyrt
-
-# go inside the webapp directory and run the flask app with the following command.
-FLASK_APP=example.py flask run
-
-# open http://127.0.0.1:5000/ on the browser.
+# Run the app
+open http://127.0.0.1:5000/ on the browser.
